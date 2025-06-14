@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  bot_p:
+    build: .
+    command: python bots/BOT_P.py
+    env_file: .env
+    restart: always
+
+  bot_pr:
+    build: .
+    command: python bots/BOT_PR.py
+    env_file: .env
+    restart: always
+
+  bot_inv:
+    build: .
+    command: python bots/BOT_Inv.py
+    env_file: .env
+    restart: always
+
+  bot_str:
+    build: .
+    command: python bots/BOT_Str.py
+    env_file: .env
+    restart: always
+
+  bot_ocenka:
+    build: .
+    command: python bots/BOT_Ocenka.py
+    env_file: .env
+    restart: always
